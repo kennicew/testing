@@ -8,7 +8,7 @@ const Cat = () => {
 
   return(
     <View style={styles.container}>
-      <Text>Hi~ I am {getFullName("Maru", "The", "Cat")}!</Text>
+      <Text>Hey there, I am {getFullName("Maru", "The", "Cat")}!</Text>
       {/* <TextInput style={styles.input} defaultValue="Name me!" /> */}
     </View>
   )
