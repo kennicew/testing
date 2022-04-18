@@ -1,14 +1,14 @@
 import React from 'react';
 import { Text, View, StyleSheet, TextInput } from 'react-native';
 
-const Cat = () => {
+const Cat = (props) => {
   const getFullName = (First, Second, Third) => {
     return First + " " + Second + " " + Third;
   }
 
   return(
     <View style={styles.container}>
-      <Text>Hey bro, I am {getFullName("Maru", "The", "Cat")}!</Text>
+      <Text>Hey bro, I am {props.name}!</Text>
       {/* <TextInput style={styles.input} defaultValue="Name me!" /> */}
     </View>
   )
@@ -18,9 +18,9 @@ const Cafe = () => {
   return(
     <View style={styles.container}>
       <Text>Welcome!</Text>
-      <Cat/>
-      <Cat/>
-      <Cat/>
+      <Cat name="Ann"/>
+      <Cat name="Bob"/>
+      <Cat name="Celina"/>
     </View>
   )
 }
